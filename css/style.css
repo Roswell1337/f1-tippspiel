@@ -52,3 +52,34 @@ button {
 button:hover {
     background: #ef233c;
 }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #3a3a3a;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteButton {
+    background: #666;
+    width: auto;
+    padding: 8px 12px;
+}

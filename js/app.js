@@ -1,3 +1,7 @@
+import { db } from "./firebase.js";
+
+console.log("Firebase verbunden:", db);
+
 document.getElementById("tipButton").addEventListener("click", () => {
-    alert("Die Tippabgabe kommt im nächsten Schritt.");
+    alert("Firebase ist verbunden 🚀");
 });
