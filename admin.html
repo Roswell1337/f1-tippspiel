@@ -15,7 +15,27 @@
 
 <main>
 
-    <section class="card">
+    <nav class="adminMenu">
+
+        <button class="menuButton active" data-page="players">
+            Teilnehmer
+        </button>
+
+        <button class="menuButton" data-page="drivers">
+            Fahrer
+        </button>
+
+        <button class="menuButton" data-page="events">
+            Events
+        </button>
+
+        <button class="menuButton" data-page="results">
+            Ergebnisse
+        </button>
+
+    </nav>
+
+    <section id="playersPage" class="card page">
 
         <h2>Teilnehmer</h2>
 
@@ -29,6 +49,39 @@
         </button>
 
         <ul id="playerList"></ul>
+
+    </section>
+
+    <section id="driversPage" class="card page hidden">
+
+        <h2>Fahrer</h2>
+
+        <input
+            type="text"
+            id="driverName"
+            placeholder="Fahrer eingeben">
+
+        <button id="addDriver">
+            Fahrer hinzufügen
+        </button>
+
+        <ul id="driverList"></ul>
+
+    </section>
+
+    <section id="eventsPage" class="card page hidden">
+
+        <h2>Events</h2>
+
+        <p>Kommt im nächsten Schritt.</p>
+
+    </section>
+
+    <section id="resultsPage" class="card page hidden">
+
+        <h2>Ergebnisse</h2>
+
+        <p>Kommt später.</p>
 
     </section>
 

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "australien",
+    "name": "Australien",
+    "track": "Melbourne",
+    "hasSprint": false
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "track": "Shanghai",
+    "hasSprint": true
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "track": "Suzuka",
+    "hasSprint": false
+  },
+  {
+    "id": "bahrain",
+    "name": "Bahrain",
+    "track": "Sachir",
+    "hasSprint": false
+  }
+]
