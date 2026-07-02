@@ -22,5 +22,11 @@
     "name": "Bahrain",
     "track": "Sachir",
     "hasSprint": false
+  },
+  {
+    "id": "großbritannien",
+    "name": "Großbritannien",
+    "track": "Silverstone",
+    "hasSprint": true
   }
 ]

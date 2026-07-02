@@ -34,6 +34,14 @@ export async function getPlayers() {
 
 }
 
+export async function getPlayerNames() {
+
+    const players = await getPlayers();
+
+    return players.map(player => player.displayName);
+
+}
+
 export async function addPlayer(displayName) {
 
     const name = displayName.trim();

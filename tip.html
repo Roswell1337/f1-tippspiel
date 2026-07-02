@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tipp abgeben</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>🏁 Tipp abgeben</h1>
+</header>
+
+<main>
+
+    <section class="card">
+
+        <h2 id="eventTitle">
+            Event
+        </h2>
+
+        <label>Teilnehmer</label>
+
+        <select id="playerSelect"></select>
+
+    </section>
+
+    <section id="sprintCard" class="card hidden">
+
+        <h2>Sprint</h2>
+
+        <select class="driverSelect sprint"></select>
+        <select class="driverSelect sprint"></select>
+        <select class="driverSelect sprint"></select>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Grand Prix</h2>
+
+        <select class="driverSelect race"></select>
+        <select class="driverSelect race"></select>
+        <select class="driverSelect race"></select>
+
+    </section>
+
+    <button id="saveTip">
+        Tipp speichern
+    </button>
+
+</main>
+
+<script type="module" src="js/tip.js"></script>
+
+</body>
+
+</html>

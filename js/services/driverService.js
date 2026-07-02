@@ -34,6 +34,14 @@ export async function getDrivers() {
 
 }
 
+export async function getDriverNames() {
+
+    const drivers = await getDrivers();
+
+    return drivers.map(driver => driver.name);
+
+}
+
 export async function addDriver(name) {
 
     name = name.trim();
