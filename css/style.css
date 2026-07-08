@@ -113,3 +113,34 @@ select {
     display: none;
 
 }
+
+table {
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th,
+td{
+
+    padding:12px;
+
+    border-bottom:1px solid #444;
+
+    text-align:left;
+
+}
+
+th{
+
+    background:#333;
+
+}
+
+td:last-child,
+th:last-child{
+
+    text-align:right;
+
+}

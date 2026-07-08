@@ -2,6 +2,7 @@ import { db } from "../firebase.js";
 
 import {
     collection,
+    collectionGroup,
     doc,
     getDoc,
     getDocs,
@@ -62,6 +63,24 @@ export async function getPredictions(eventId) {
     predictions.sort((a, b) =>
         a.player.localeCompare(b.player, "de")
     );
+
+    return predictions;
+
+}
+
+export async function getAllPredictions() {
+
+    const snapshot = await getDocs(
+        collectionGroup(db, "players")
+    );
+
+    const predictions = [];
+
+    snapshot.forEach(document => {
+
+        predictions.push(document.data());
+
+    });
 
     return predictions;
 

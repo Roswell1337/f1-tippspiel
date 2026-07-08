@@ -7,26 +7,20 @@ let deadline = null;
 
 function updateCountdown() {
 
-    if (!deadline)
-        return;
+    if (!deadline) return;
 
-    const now = new Date();
-
-    const diff = deadline - now;
+    const diff = deadline - new Date();
 
     if (diff <= 0) {
 
         countdown.textContent = "Tippabgabe beendet";
-
         return;
 
     }
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor(diff / 3600000) % 24;
+    const minutes = Math.floor(diff / 60000) % 60;
 
     countdown.textContent =
         `${days} Tage ${hours} Stunden ${minutes} Minuten`;
@@ -39,7 +33,7 @@ async function init() {
 
     if (!event) {
 
-        raceName.textContent = "Noch kein Event ausgewählt.";
+        raceName.textContent = "Noch kein aktives Event.";
 
         countdown.textContent = "--";
 
@@ -53,7 +47,7 @@ async function init() {
         ${event.hasSprint ? "<br>🏎 Sprint-Wochenende" : ""}
         <br><br>
         Deadline:<br>
-        ${event.deadline.replace("T"," ")}
+        ${event.deadline.replace("T", " ")}
     `;
 
     deadline = new Date(event.deadline);
@@ -69,5 +63,11 @@ init();
 document.getElementById("tipButton").addEventListener("click", () => {
 
     window.location.href = "tip.html";
+
+});
+
+document.getElementById("leaderboardButton").addEventListener("click", () => {
+
+    window.location.href = "leaderboard.html";
 
 });

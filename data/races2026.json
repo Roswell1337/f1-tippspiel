@@ -28,5 +28,11 @@
     "name": "Großbritannien",
     "track": "Silverstone",
     "hasSprint": true
+  },
+  {
+    "id": "belgien",
+    "name": "Belgien",
+    "track": "Spa-Francorchamps",
+    "hasSprint": false
   }
 ]
